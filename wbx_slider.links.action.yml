@@ -1,0 +1,5 @@
+entity.slide.add_form:
+  route_name: entity.slide.add_form
+  title: 'Add Slide'
+  appears_on:
+    - entity.slide.collection

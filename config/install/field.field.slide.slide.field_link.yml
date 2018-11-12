@@ -1,0 +1,22 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.slide.field_link
+  module:
+    - link
+    - wbx_slider
+id: slide.slide.field_link
+field_name: field_link
+entity_type: slide
+bundle: slide
+label: Ссылка
+description: 'Текст ссылки - это текст "Кнопки" на слайде. URL - адрес, куда ведёт ссылка.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

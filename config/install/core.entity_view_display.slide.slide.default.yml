@@ -1,0 +1,63 @@
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.slide.slide.field_image
+    - field.field.slide.slide.field_link
+    - field.field.slide.slide.field_text
+  module:
+    - image
+    - link
+    - text
+    - user
+    - wbx_slider
+id: slide.slide.default
+targetEntityType: slide
+bundle: slide
+mode: default
+content:
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_text:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

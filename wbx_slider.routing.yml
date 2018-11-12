@@ -1,0 +1,7 @@
+slide.content:
+  path: '/admin/content/slides'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Slides'
+  requirements:
+    _permission: 'administer slide entities'

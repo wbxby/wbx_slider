@@ -1,0 +1,7 @@
+name: 'WBX Slider'
+type: module
+description: 'Provides slider for front page'
+core: 8.x
+package: 'Webxayc'
+dependencies:
+  - bg_image_formatter

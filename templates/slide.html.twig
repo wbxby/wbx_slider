@@ -15,8 +15,8 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes.addClass('slide') }}>
+<a{{ attributes.addClass('slide', 'slide-' ~ slide.id()) }} href="{{ url }}">
   {% if content %}
     {{- content -}}
   {% endif %}
-</div>
+</a>

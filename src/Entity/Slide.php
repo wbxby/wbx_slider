@@ -40,6 +40,12 @@ use Drupal\user\UserInterface;
  *   data_table = "slide_field_data",
  *   revision_table = "slide_revision",
  *   revision_data_table = "slide_field_revision",
+ *   show_revision_ui = TRUE,
+ *   revision_metadata_keys = {
+ *     "revision_user" = "revision_user",
+ *     "revision_created" = "revision_created",
+ *     "revision_log_message" = "revision_log_message",
+ *   },
  *   translatable = TRUE,
  *   admin_permission = "administer slide entities",
  *   entity_keys = {

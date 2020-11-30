@@ -55,15 +55,11 @@ class SlideForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label Slide.', [
-          '%label' => $entity->label(),
-        ]));
+        \Drupal::messenger()->addMessage('Created the ' . $entity->label() . ' Slide.');
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label Slide.', [
-          '%label' => $entity->label(),
-        ]));
+        \Drupal::messenger()->addMessage('Saved the ' . $entity->label() . ' Slide.');
     }
     $form_state->setRedirect('entity.slide.canonical', ['slide' => $entity->id()]);
   }
